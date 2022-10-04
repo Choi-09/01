@@ -1,12 +1,16 @@
+//라이브러리에서 꺼내써요
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+//↓가상 DOM을 만들어서 기존의 DOM과 계속 비교해가면서 업데이트 시킨다.
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  //import React from 'react'; 여기 있는 태그
+  <React.StrictMode> 
+  {/* improt Att from './App'; 여기서 가져욤*/}
     <App />
   </React.StrictMode>
 );
