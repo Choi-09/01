@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello World</title>
+
+  <!-- React CDN -->
+  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+
+
+  <script type = "text/babel">
+    //Hello 컴포넌트
+    // class Hello extends React.Component {
+    //   render() { //render 메소드 
+    //     return React.createElement('h1', null, `Hello ${this.props.toWhat}`); //
+    //   }
+    // }
+
+    // const root = ReactDOM.createRoot(document.getElementById("root"));
+    // root.render(React.createElement(Hello, {toWhat: 'React'}, null)); //클래스이름과 같은 Hello, props와 같은 속성이름(toWhat) 사용
+
+    
+    function MyHello() { //반드시 대문자로 시작
+      return (<p> <h1> K-digital </h1> </p> ); //태그는 반드시 1개만 가능
+    }
+    
+    const root = ReactDOM.createRoot(document.getElementById("root"));
+    root.render(<MyHello> </MyHello>)
+
+    //DOM 랜더링(React에 가상 DOM을 만든다)
+   
+  </script>
+
+</body>
+</html>
+
