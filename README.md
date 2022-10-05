@@ -15,15 +15,17 @@
   + 6. components 파일 생성
   + 7. components - MyTick(이름자유).jsx(js도 괜찮다.) js파일 생성
   + 8. MyTick파일을 App.js에 갖다 붙인다. 
-  ++   → (App.js -> import, function에 태그; )  //여러개사용해도 됨
+    +   → (App.js -> import, function에 태그; )  //여러개사용해도 됨
   + 9. MyTick 파일 작성: 필수 구문 Function MyTick() {return();}  //App.js복사하면 편리하다
- {} 
+  
 + 특징
   + 사용자 정의태그를 만든다는것은: 아무렇게나 만드는게 아니라 리턴을 기존에 있는 HTML 태그를 묶음으로 만드는 것.
   + 컴포넌트는 무조건 대문자로 시작
   + 1컴포넌트 -> 1 function -> 1리턴-> 1 태그묶음
   
-  
 + 참고사이트
   + 리액트: https://ko.reactjs.org/
   + 파비콘 만들기:  
+
++ 함수
+  + new Date().to-- 자동완성 ()
