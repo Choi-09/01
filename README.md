@@ -17,6 +17,7 @@
   + 8. MyTick파일을 App.js에 갖다 붙인다. 
     +   → (App.js -> import, function에 태그; )  //여러개사용해도 됨
   + 9. MyTick 파일 작성: 필수 구문 Function MyTick() {return();}  //App.js복사하면 편리하다
+  + 10. 페이지 생성: 터미널 깃 커밋 후 작업중인 파일의 package.json 
   
 + 특징
   + 사용자 정의태그를 만든다는것은: 아무렇게나 만드는게 아니라 리턴을 기존에 있는 HTML 태그를 묶음으로 만드는 것.
