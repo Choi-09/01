@@ -1,0 +1,16 @@
+
+* {
+ margin: 0px;   
+}
+.myh2 {
+    background-image: linear-gradient(to bottom, #f9a19d, #e38ca8, #c07fb2, #8f77b7, #4e71b1);    color: white;
+    height: 10vh;
+    font-size: 2rem;
+}
+
+.ltime {
+    background-image: linear-gradient(to bottom, #4e71b1, #3d5490, #2b3970, #1a2051, #0b0434);    font-size: 5vw;
+    height: 10vh;
+    color: white;
+    font-size: 3rem;
+}
