@@ -26,8 +26,8 @@
   
 + 참고사이트
   + 리액트: https://ko.reactjs.org/
-  + 파비콘 만들기:  
+  + 파비콘 만들기: www.favicon-generator.org
 
 + 함수
   + 현재시간 : new Date().toLocalTime 자동완성 ()
-  + 실시간 랜더링: Set Interval(콜백함수, 1000) 
+  + 실시간 랜더링: [index.js] setInterval( () => root.render( <React.StrictMode> <App /> </React.StrictMode>), 1000);
