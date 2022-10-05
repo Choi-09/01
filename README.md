@@ -28,4 +28,5 @@
   + 파비콘 만들기:  
 
 + 함수
-  + new Date().to-- 자동완성 ()
+  + 현재시간 : new Date().toLocalTime 자동완성 ()
+  + 실시간 랜더링: Set Interval(콜백함수, 1000) 
