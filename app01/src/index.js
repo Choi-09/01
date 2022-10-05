@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   //import React from 'react'; 여기 있는 태그
   <React.StrictMode> 
-  {/* improt Att from './App'; 여기서 가져욤*/}
+  {/* improt Att from './App'; 여기랑 매칭*/}
     <App />
   </React.StrictMode>
 );
