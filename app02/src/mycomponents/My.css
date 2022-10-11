@@ -2,11 +2,11 @@
 * {
  margin: 0px;   
 }
+
 .myh2 {
     background-image: linear-gradient(to bottom, #f9a19d, #e38ca8, #c07fb2, #8f77b7, #4e71b1);    color: white;
     height: 10vh;
     font-size: 2rem;
-
 }
 
 

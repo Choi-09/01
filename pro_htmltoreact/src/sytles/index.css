@@ -1,0 +1,140 @@
+ /* 전체 적용 */
+ * {
+    margin: 0px;
+    padding: 0px;
+ }
+
+ /* 레이아웃 */
+ nav {
+    background-color: #C0D8C0;
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    height: 60px;
+    text-align: center;
+    top: 0;
+    position: sticky;
+ }
+
+ nav > ul {
+    display: flex;
+    list-style: none;
+    font-size: 23pt;
+ }
+
+ .nav_menu li {
+    display: flex;
+    margin-right: 1em;
+ }
+ nav a{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+ nav a:hover {
+    background-color: #C0D8C0;
+    color: white;
+ }
+
+.nav_icon li {
+    margin-right: 1em;
+    color: black;
+}
+ header {
+    background-color: #DF7861;
+    font-family: 'Do Hyeon', sans-serif; 
+ }
+header > section {
+    display: flex;
+    font-size:20px;
+}
+.header_left, .header_right {
+    margin: 20px;
+}
+.header_left {
+    width: 30%;
+    text-align: center;
+    font-size: 23pt;
+    color: white;
+    font-size:1.5em;
+    /* em: 부모 폰트사이즈에 따른 비율 */
+    /* rem: 부모와 상관없이 웹 환경 기본사이즈에 따른 비율 */
+}
+.header_right {
+    width: 70%;
+    text-align: left;
+    font-size: 1em;
+    color:white;
+    font-family: 'Sunflower', sans-serif;
+}
+
+ main {
+    background-color: #F5EEDC;
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    
+ }
+ main > section {
+    width: 200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+ }
+ .content > h1 {
+   margin: 10px;
+ }
+ img{
+    border-radius: 30%;
+ }
+ 
+footer {
+    background-color: #ECB390;
+    display: flex;
+    color: navy;
+}
+footer > section, footer > ul {
+    margin: 20px ;
+    list-style: none
+}
+footer > section {
+    font-size: pt;
+    text-align: center;
+}
+footer li {
+   padding: 5px;
+   list-style:"◎"
+}
+
+/* @media only screen and (min-width:400px) and (max-width:1000) {} 
+   미니멈 400픽셀~맥시멈 1000픽셀 사이일때 미디어쿼리*/
+@media only screen and (max-width:600px) {
+   header > section {
+      flex-direction:column ;
+      align-items: center;
+      /* justify-contents: 가로축 중심
+         align-items: 세로축 중심 */
+   }
+   .header_left, .header_right {
+      width: 80%;
+  }
+  main {
+   flex-direction: column;
+   align-items: center;
+}
+   main > section {
+      width: 80%;
+   }
+   footer > ul {
+      display: none;
+   }
+}
+
+   
+   
+
+  
