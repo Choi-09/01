@@ -1,6 +1,10 @@
 h1 {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
     background-color: #023047;
-    height:10vh;
+    height:100px;
     color: white;
     display: flex;
     flex-direction: center;

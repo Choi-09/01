@@ -1,27 +1,53 @@
 ul {
-  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
   list-style: none;
   width: 40vw;
-  height: 10vh;
-  background-color: #FFFCF2;
-  border: 1px solid #403D39;
+  min-width: 300px;
+  height: 7vh;
+  background-color: #fcf9ee;
+  border: 1px solid black;
   border-radius: 5px;
+  padding-left: 0;
+  margin: 20px 10px;
 }
 
 .mvLi {
-  font-size: 15px;
-  
+  display: inline-flex;
+  align-items: center;
+  font-size: 3vmin;
 }
-.rank {
 
-  padding: 5px 10px;
+.rank {
+  padding: 1.5vh 15px;
   background-color: #EB5E28;
+  width: 1rem;
+  text-align: center;
+  border-radius: 4px 0px 0px 4px;
+  font-weight: bold;
 }
 
 .movieNm {
- /* margin-left: 10%; */
+ flex-wrap: wrap;
+ margin-left: 10%;
+ font-size-adjust: auto;
+ font-size: 2vw;
+ margin-right: 9%;
 }
 
 .mainDiv {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
 }

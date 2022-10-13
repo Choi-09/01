@@ -63,12 +63,12 @@ function MyCom07(probs) {
                 {lis}
               </li>     
             </ul>
-            <div> 
+            <div className='btn'> 
               {/* <span onClick={()=>{
                 cnt++;
                 console.log(cnt);
               }}>💗</span> */}
-              <span onClick={upCnt}>💗</span>
+              <span onClick={upCnt}>🧡</span>
               <span>{cnt}</span>
             </div>
         </div>
