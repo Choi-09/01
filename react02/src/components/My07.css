@@ -1,0 +1,27 @@
+ul {
+  margin-left: 0;
+  list-style: none;
+  width: 40vw;
+  height: 10vh;
+  background-color: #FFFCF2;
+  border: 1px solid #403D39;
+  border-radius: 5px;
+}
+
+.mvLi {
+  font-size: 15px;
+  
+}
+.rank {
+
+  padding: 5px 10px;
+  background-color: #EB5E28;
+}
+
+.movieNm {
+ /* margin-left: 10%; */
+}
+
+.mainDiv {
+  display: flex;
+}
