@@ -1,16 +1,80 @@
-import '../App.css';
-import MyHello from './MyHello'
+import './My06.css'
 
 function MyCom() {
-    return (
-        <>
-        {/* 속성값을 만들 수 있음 
-            MyHello 컴포넌트에서 probs 매개변수 (oibject type)에 전달*/}
-            <MyHello name = 'PNU' num = '1' ck = '' />
-            <MyHello name = 'K-digital' num = '2' ck = '1' />
-            <MyHello name = '부산대학교' num = '3' ck = '' />
-        </>
-    );
+    // object 생성 방법1
+    let obj = new Object();
+    // console.log('object1 생성 ->', obj);
+
+    // // object 생성 방법2
+    let obj2 = {};
+    // console.log('object2 생성 ->', obj2);
+
+    // object 생성 방법 3
+    let mv =  {
+        "rnum": 1,
+        "rank": 1,
+        "rankInten": 0,
+        "rankOldAndNew": "OLD",
+        "movieCd": 20215601,
+        "movieNm": "공조2: 인터내셔날",
+        "openDt": "2022-09-07",
+        "salesAmt": 186527512,
+        "salesShare": 23.2,
+        "salesInten": -645733705,
+        "salesChange": -77.6,
+        "salesAcc": 68000199650,
+        "audiCnt": 18989,
+        "audiInten": -61139,
+        "audiChange": -76.3,
+        "audiAcc": 6624892,
+        "scrnCnt": 979,
+        "showCnt": 3048
+      }
+
+    //   console.log('영화명(.):', mv.movieNm);
+    //   console.log('영화명([]):', [mv.movieNm]);
+
+    // object 순회1 (in)
+    //   for (let k in mv) {
+    //     console.log(k, '=>', mv[k]);
+    //     if (k === "movieNm") break
+    //   }
+
+    // // object 순회2 (of) Object.entries
+      for(let [k,v] of Object.entries(mv)) {
+        console.log(k, '=>', v)
+        if (k === "movieNm") break
+      }
+
+      // 얕은 복사 : 원본은 손대지 않고 본사
+      obj = mv;
+      console.log("얕은 복사:", obj) ;
+  
+      //깊은 복사
+      obj2 = {...mv} ;
+      console.log("깊은 복사(전개연산자...사용):", obj2);
+      
+      // mv 오브젝트 내용 변경
+      mv.movieNm = '공조2';
+
+      //jsx에 들어갈 내용 생성 (key값을 반드시 달아야 한다.)
+      let lis = [];
+      for(let [k,v] of Object.entries(mv)) {
+        lis.push(
+        <li key={k}> <span className="mvLiK"> {k} </span> 
+        <span className="mvLiV">{v} </span> </li>)
+      }
+
+      console.log(lis)
+
+      return (
+          <>
+          <h1> Object 타입 연습</h1>
+          <ul> 
+            {lis}
+          </ul>
+          </>
+      );
   }
   
   export default MyCom;

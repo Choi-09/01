@@ -13,8 +13,10 @@ export default function MyHello(probs) { //export default인 경우 function 앞
         <h2>
             <span className = 'spanHello'> {probs.name}  </span>
             <span className = 'numHello'> {probs.num % 2 == 1 ? '홀수' : '짝수'}  </span>
-            <span className = 'numHello'> {probs.ck || '🙄'}  </span>
+            <span className = 'numHello'> {probs.ck || '🙄'}  </span> 
+                                          {/* ck값 혹은 '🙄' 둘중 하나 출력 */}
             <span className = 'numHello'> {probs.ck ? '😘' : '🤔'}  </span>
+                                          {/* ck값이 true인 경우 😘, false 인 경우 🤔 */}
         </h2>
     </div>
 

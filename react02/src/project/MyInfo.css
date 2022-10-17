@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    background-color: #092532;
+    height:100px;
+    color: white;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid #E94560;
+    list-style: none;
+    padding-left: 0;
+    width: auto;
+    margin: 5vw 10vw;
+}
+
+.ktitle {
+    display:flex;
+    flex-direction: center;
+    justify-content: center;
+    align-content: center;
+    font-size: 150%;
+    border-right: 1px solid gray;
+}
+
+.kvalue{
+    font-size: 100%;
+}

@@ -35,7 +35,7 @@ function MyCom07(probs) {
   let [cnt, setCnt] = useState(0);
 
   const upCnt=() => {
-    setCnt(cnt++);
+    setCnt(++cnt);
     console.log(cnt);
   }
   return (

@@ -1,5 +1,7 @@
-ul {
+li {
   list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .mvLiK {
   display: inline-flex;
@@ -8,6 +10,8 @@ ul {
   font-weight: bold;
   padding: 5px;
   margin-right: 10px;
+  text-align: center;
+  color: black;
 }
 
 .mvLiV {
@@ -17,4 +21,9 @@ ul {
   border-bottom: 1px solid gray;
   width: 200px;
   padding-left: 15px;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
 }

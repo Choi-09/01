@@ -1,14 +1,13 @@
 import MyObject from './components/MyObject';
-import MvInfo from './project/MvInfo';
 
-function App() {
+
+function MyApp() {
 
   return (
     <>
-      {/* <MyInfo /> */}
       <MyObject />
     </>
   );
 }
 
-export default App;
+export default MyApp;
