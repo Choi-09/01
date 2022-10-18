@@ -109,8 +109,7 @@ function MvInfo() {
     useEffect(()=> {
         console.log('useEffect : 관련state변수가 변경될 때 실행 ') ;
         }, [cntUpSt]) ;
-
-        
+  
     return(
         <>
         <h1>영화 상세</h1>
