@@ -2,43 +2,69 @@
     margin: 0;
     padding: 0;
 }
+
 h1 {
     margin: 0;
     padding: 0;
     position: sticky;
     top: 0;
     background-color: #092532;
-    height:100px;
+    height:10vh;
     color: white;
     display: flex;
     flex-direction: center;
     justify-content: center;
     align-items: center;
-    font-size: 48px;
-    margin-bottom: 50px;
+    font-size: 7vmin;
 }
 
-ul {
+.timer {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: beige;
+    height: 6vh;
+    font-size: 4vmin;
+}
+
+ul {display: flex;
+    flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
     border: 1px solid #E94560;
+    border-radius: 5px;
     list-style: none;
-    padding-left: 0;
-    width: auto;
-    margin: 5vw 10vw;
+    padding: 10px;
+    width: 60vw;
+    margin-top: 50px;
 }
 
-.ktitle {
-    display:flex;
-    flex-direction: center;
+.k,.v{
+    display: inline-block;
+    flex-direction: column;
     justify-content: center;
-    align-content: center;
-    font-size: 150%;
-    border-right: 1px solid gray;
 }
 
-.kvalue{
-    font-size: 100%;
+.k {text-align: right;
+    font-weight: bold;
+    width: 50%;
+    font-size: 4vmin;
+    padding-right: 1em;
+    margin: 10px auto;
+}
+
+.v { 
+    text-align: left;
+    font-size: 2.8vmin;
+}
+
+.btn {
+    font-size: 4.5vmin;
+    text-align: center;
+    padding: 5%;
+}
+
+.dislike {
+    padding-left: 5%;
 }

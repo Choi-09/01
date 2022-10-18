@@ -1,4 +1,5 @@
-import MyObject from './components/MyObject';
+/*import MyObject from './components/MyObject';*/
+
 import MvInfo from './project/MvInfo';
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
   return (
     <>
       {/* <MyInfo /> */}
-      <MyObject />
+      <MvInfo />
     </>
   );
 }

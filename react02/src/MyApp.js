@@ -1,11 +1,11 @@
-import MyObject from './components/MyObject';
+import MvInfo from './project/MvInfo';
 
 
 function MyApp() {
 
   return (
     <>
-      <MyObject />
+      <MvInfo />
     </>
   );
 }
