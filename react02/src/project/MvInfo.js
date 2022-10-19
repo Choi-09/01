@@ -75,7 +75,9 @@ function MvInfo() {
     let [cntDownSt, setcntDownst] = useState(0); //0:초기값
     let [flag, setFlag] = useState(true) ;
     let [flag2, setFlag2] = useState(true);
-
+    let [txt1, settxt1] = useState([]); //댓글창에 댓글 submit되면 input type 에 적힌 내용이 
+                                //txt초기값을 배열로 주고
+                                
     const thumbUp=() => {
         setcntUpst(++cntUpSt);
         console.log('state변수 (좋아요):', cntUpSt);
@@ -97,6 +99,13 @@ function MvInfo() {
     const handleTimer2 = () => {
         setFlag2(flag2 ==='none' ? 'flex' : 'none'); //flag2가 none이면 display: none
         console.log(cntRef.current);
+    }
+
+    //form submit        event 받고
+    const handleSubmit =(event) => {
+        event.preventDefault(); //submit 할때 처음으로 되돌리지 않도록 preventDefault
+        console.log(txtRef.current.value);
+        settxt1([<li key={txtRef.current.value} className='refLi'>{txtRef.current.value}</li>, ...txt1]); //전개연산자: ... 배열에 있는 모든 항목을 다뿌려줌
     }
 
     //useEffect 훅: 랜더링 발생시 계속 수행
@@ -153,20 +162,24 @@ function MvInfo() {
             <span>{cntDownSt}</span>
 
         </div>
-
-        <div className='mvForm'>
-            <form>
-                <input type = 'text' ref = {txtRef} placeholder='댓글을 입력하세요'/>
-                <button type = 'submit'> 확인 </button>
-                <button type = 'delete'> 삭제 </button>
-            </form>
-            <div className='mvFormList'>
-
-            </div>
+        <div className='mvFormList'>
+            {txt1}
         </div>
+        <form className='mvForm' onSubmit={handleSubmit}>
+            <input type = 'text' ref = {txtRef} placeholder='댓글을 입력하세요'/>
+            <button type = 'submit'> 확인 </button>
+            <button type = 'delete'> 삭제 </button>
+        </form>
+
+
         </>
     );
 
 }
 
 export default MvInfo;
+
+//useState: 내용변경하고싶을때 > set이 일어나면 해당부분만 재랜더링
+//
+
+//form tag : reset, submit, 

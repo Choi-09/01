@@ -51,6 +51,11 @@ ul {display: flex;
     font-size: 4vmin;
     padding-right: 1em;
     margin: 10px auto;
+    font-family: 'GodoM';
+}
+@font-face {
+    font-family: "GodoM";
+    src: url("../components/fonts/GodoM.ttf");
 }
 
 .v {
@@ -73,22 +78,42 @@ ul {display: flex;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20vh;
+    height: 5vh;
+    margin-top: 20px;
 }
 
 button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 100px;
-    height: 30px;
-    margin: 10px;
+    width: 20vmin;
+    height: 6vmin;
+    margin-left: 15px;
     border-radius: 5px;
-    background-color: white;
+    background-color: lightgray;
 }
 
 input[type=text] {
     display: inline-flex;
-    width: 200px;
-    height: 30px;
+    width: 50vmin;
+    height: 6vmin;
+    border: 3px solid black;
+    border-radius: 3px;
+}
+
+.mvFormList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid gray;
+    width: 60vw;
+    height: 20vh;
+    margin: 20px auto;
+}
+
+.refLi {
+    display: flex;
+    flex-direction: column;
+    
 }
