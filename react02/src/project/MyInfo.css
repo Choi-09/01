@@ -42,7 +42,6 @@ ul {display: flex;
 
 .k,.v{
     display: inline-block;
-    flex-direction: column;
     justify-content: center;
 }
 
@@ -54,7 +53,8 @@ ul {display: flex;
     margin: 10px auto;
 }
 
-.v { text-align: left;
+.v {
+    text-align: left;
     font-size: 2.5vmin;
     padding-right: 5%;
 }
@@ -62,9 +62,33 @@ ul {display: flex;
 .btn {
     font-size: 4.5vmin;
     text-align: center;
-    padding: 5%;
+    padding: 2%;
 }
 
 .dislike {
     padding-left: 5%;
+}
+
+.mvForm { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+input[type=text] {
+    display: inline-flex;
+    width: 200px;
+    height: 30px;
 }

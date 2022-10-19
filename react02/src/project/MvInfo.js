@@ -1,7 +1,7 @@
 import mv from '../jsonData/mvinfo.json'; //mvinfo에서 데이터 끌어오기
 import '../project/MyInfo.css';
 //useState hook이 브라우저에 재랜더링해서 출력
-import {useState, useEffect} from 'react';
+import {useState, useEffect, useRef} from 'react';
 //Hook: useState, useEffect
 import MvClock from './MvClock'
 
@@ -79,11 +79,13 @@ function MvInfo() {
     const thumbUp=() => {
         setcntUpst(++cntUpSt);
         console.log('state변수 (좋아요):', cntUpSt);
+        cntRef.current = cntRef.current +1;
     }
 
     const thumbDown=() => {
         setcntDownst(++cntDownSt);
         console.log('state변수(싫어요) :', cntDownSt);
+        ++cntRef.current;
       }
     
     //시계아이콘을 클릭하면 flag변수 변경: 컴포넌트 추가,삭제
@@ -94,22 +96,30 @@ function MvInfo() {
     // 스타일 적용해서 타이머 보였다,안보였다 설정
     const handleTimer2 = () => {
         setFlag2(flag2 ==='none' ? 'flex' : 'none'); //flag2가 none이면 display: none
+        console.log(cntRef.current);
     }
 
     //useEffect 훅: 랜더링 발생시 계속 수행
-    useEffect(()=> {}) ;
+    useEffect(()=> {
       console.log('useEffect : 랜더링 발생시 계속 수행 ') ;
-
+    }) ;
     //useEffect Hook: 컴포넌트 생성시 한 번 발생  "useEffect(()=>{}, [])"
     useEffect(()=> {
     console.log('useEffect : 컴포넌트 생성시 한 번 발생 ') ;
+    console.log('ref cnt: ', cntRef.current);  //current: cntRef로 생성된 변수는 오브젝트 타입인데 이 오브젝트타입의 키값이 current
+    
+    txtRef.current.focus(); //첫화면에서 댓글창에 커서가 자동으로 깜빡거린다. 
     }, []) ;
 
     //useEffect Hook: 관련state변수가 변경될 때 실행
     useEffect(()=> {
         console.log('useEffect : 관련state변수가 변경될 때 실행 ') ;
         }, [cntUpSt]) ;
-  
+
+    //useRef hook: up or down 눌러지면 무조건 증가
+    let cntRef = useRef(0);
+    let txtRef = useRef();
+
     return(
         <>
         <h1>영화 상세</h1>
@@ -119,6 +129,7 @@ function MvInfo() {
             <span onClick={handleTimer2}> 🕒 </span>
             <span className='clock2' style={{'display': flag2}}><MvClock /></span>
         </div>
+  
         <ul>
             {/* <li><span>영화명</span><span>{mvinfo.movieNm}</span></li>
             <li><span>영화코드</span></li>
@@ -143,6 +154,16 @@ function MvInfo() {
 
         </div>
 
+        <div className='mvForm'>
+            <form>
+                <input type = 'text' ref = {txtRef} placeholder='댓글을 입력하세요'/>
+                <button type = 'submit'> 확인 </button>
+                <button type = 'delete'> 삭제 </button>
+            </form>
+            <div className='mvFormList'>
+
+            </div>
+        </div>
         </>
     );
 
