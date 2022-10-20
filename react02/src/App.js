@@ -1,13 +1,10 @@
-/*import MyObject from './components/MyObject';*/
-
-import MvInfo from './project/MvInfo';
+import BoxOfficeList from './project/BoxOfficeList';
 
 function App() {
 
   return (
     <>
-      {/* <MyInfo /> */}
-      <MvInfo />
+      <BoxOfficeList />
     </>
   );
 }

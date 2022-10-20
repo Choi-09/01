@@ -160,7 +160,6 @@ function MvInfo() {
             <span>{cntUpSt}</span>
             <span onClick={thumbDown} className='dislike'>👎</span>
             <span>{cntDownSt}</span>
-
         </div>
         <div className='mvFormList'>
             {txt1}
@@ -170,8 +169,6 @@ function MvInfo() {
             <button type = 'submit'> 확인 </button>
             <button type = 'delete'> 삭제 </button>
         </form>
-
-
         </>
     );
 

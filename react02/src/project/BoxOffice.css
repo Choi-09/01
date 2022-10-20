@@ -1,0 +1,113 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  background-color: #2C2E43;
+  height:100px;
+  color: white;
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 48px;
+  margin-bottom: 50px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  list-style: none;
+  width: 40vw;
+  min-width: 300px;
+  height: 5vh;
+  min-height: 30px;
+  background-color: #fcf9ee;
+  border: 1px solid black;
+  border-radius: 5px;
+  border-color: black;
+  padding-left: 0;
+  margin: 20px 10px;
+}
+
+.mvLi {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 5px;
+}
+
+.rank {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+  padding: 5px;
+  background-color: #E45826;
+  width: 10%;
+  border-radius: 5px;
+}
+
+.movieNm {
+ display: inline-flex;
+ align-items: center;
+ margin-left: 10%;
+ font-size: 2vmin;
+ margin-right: 9%;
+ max-height: 5vh;
+
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 3vmin;
+}
+
+.formDiv {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.mainDiv, .mainDiv2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainDiv>ul:hover {
+  background-color: #E6D5B8;
+  cursor: pointer;
+}
+
+.mainDiv2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mainDiv2 > ul {
+  background-color: E6D5B8;
+  color: black;
+  padding: 10px;
+  width: 350px;
+}
