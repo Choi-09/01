@@ -39,3 +39,10 @@
 + 함수
   + 현재시간 : {new Date().toLocalTimeString ()}
   + 실시간 랜더링: [index.js] setInterval( () => root.render( <React.StrictMode> <App /> </React.StrictMode>), 1000);
+  
+  
+  
+## 오픈API로 서비스 제작
+  + www.data.go.kr : 데이터 다운
+  + 인증키 확인
+  + 데이터 문서에서 요청/응답메세지 예제 확인 (주소 복사, 인증키 수정, 날짜시간 수정, dataType 수정, )
