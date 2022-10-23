@@ -6,6 +6,134 @@
 h1 {
     position: sticky;
     top: 0;
-    height: 60px;
-    background-color: ;
+    height: 100px;
+    background-color:#22577E; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color:white;
+    font-size: 3em;
+    z-index: 1;
+    font-family: '12롯데마트행복Bold';
+}
+
+.formDiv{
+    display: flex;
+    justify-content: center;
+    min-height: 70px;
+    background-color: #F1F1E6;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+button {
+    position: relative;
+	z-index: 0;
+	border: 1px solid black;
+    font-size: 1.3em;
+    font-family: 'BinggraeMelona';
+    margin: 30px 20px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+button::before, 
+button::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+
+button,
+button::before,
+button::after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+    border-radius: 5px;
+}
+
+button:hover {
+	background-color: #A9D5FF;
+	border-color: #A9D5FF;
+	color: black;
+}
+
+button::before,
+button::after {
+	top: 0;
+	width: 50%;
+	height: 100%;
+	background-color: #F2FAFF;
+
+}
+
+button::before {
+	right: 0;
+}
+
+button::after {
+	left: 0;
+}
+button:hover::before,
+button:hover::after {
+	width: 0;
+	background-color: #F2FAFF;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7%;
+}
+
+li {
+    list-style: none;
+    border: 1px solid black;
+    width: 50vw;
+    margin-bottom: 3%;
+    border: 1.5px solid #dd9c234a;
+    border-radius: 5px;
+    padding: 20px 50px;
+}
+
+span {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'BinggraeMelona';
+    margin: 3%;
+}
+
+.dayafter{
+   color:#22577E;
+   font-size: large;
+}
+
+.rnkey {
+
+}
+.rnvalue {
+    color: #E39E22;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.wkey {
+
+}
+
+.wvalue {
+    color:#E39E22;
+    font-size: xx-large;
+    font-weight: bold;
 }

@@ -1,0 +1,24 @@
+@font-face {
+    font-family: '12롯데마트행복Bold';
+    src: url('../font/12롯데마트행복Bold.ttf');
+}
+
+@font-face {
+    font-family: '12롯데마트행복Light';
+    src: url('../font/12롯데마트행복Light.ttf');
+}
+
+@font-face {
+    font-family: '12롯데마트행복Medium';
+    src: url('../font/12롯데마트행복Medium.ttf');
+}
+
+@font-face {
+    font-family: 'BinggraeMelona-Bold';
+    src: url('../font//BinggraeMelona-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'BinggraeMelona';
+    src: url('../font/BinggraeMelona.ttf');
+}

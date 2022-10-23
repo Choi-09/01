@@ -1,4 +1,5 @@
 import weather from '../DB/weather.json';
+import './font.css'
 import { useState } from 'react';
 
 export default function WeatherDay(probs){
@@ -18,23 +19,23 @@ export default function WeatherDay(probs){
         <ul>
             <li className='rntotalam'> 
                 <span className='dayafter'> {d}일 후 </span> 
-                <span className='rneky'> 오전 강수량 </span> 
-                <span className='rnvalue'> {items[0]} </span> 
+                <span className='rnkey'> 오전 강수량 </span> 
+                <span className='rnvalue'> {items[0]} %</span> 
             </li>
             <li className='rntotalpm'> 
                 <span className='dayafter'> {d}일 후 </span> 
-                <span className='rneky'> 오후 강수량 </span> 
-                <span className='rnvalue'> {items[1]} </span> 
+                <span className='rnkey'> 오후 강수량 </span> 
+                <span className='rnvalue'> {items[1]} % </span> 
             </li>
             <li className='wtotalam'> 
                 <span className='dayafter'> {d}일 후 </span> 
                 <span className='wkey'> 오전 날씨예보</span> 
-                <span className='rnvalue'> {items[2]} </span>
+                <span className='wvalue'> {items[2]} </span>
             </li>
             <li className='wtotalpm'> 
                 <span className='dayafter'> {d}일 후 </span> 
                 <span className='wkey'> 오후 날씨예보 </span>
-                <span className='rnvalue'> {items[3]} </span>
+                <span className='wvalue'> {items[3]}</span>
             </li>
         </ul>
         </>
