@@ -10,16 +10,16 @@ export default function WeatherMain2() {
 
     const items2 = Object.entries(w2item).map((m)=> //map함수안에들어가는 m은 바로 리턴이 되어야해서 if조건문 안되고, 삼항연산자로 조건설정
         (m[1].category === "PTY" ? 
-        (<div key = {m[1].category}> 
+        (<div key = {m[1].category} className = 'total'> 
             <span className='title'>{item[m[1].category][0]} </span>
             <span className='detailvalue'> {pty[m[1].obsrValue]} </span>
         </div>) 
         : (m[1].category === "SKY" ?
-        <div key = {m[1].category}>
+        <div key = {m[1].category} className = 'total'>
             <span className='title'>{item[m[1].category][0]} </span>
             <span className='detailvalue'> {sky[m[1].obsrValue]}</span>
          </div>
-        : <div key = {m[1].category} > 
+        : <div key = {m[1].category} className = 'total'> 
             <span className='title'>{item[m[1].category][0]} </span>
             <span className='detailvalue'>{m[1].obsrValue} {item[m[1].category][1]}</span>
         </div>

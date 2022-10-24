@@ -146,10 +146,11 @@ li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
     font-weight: bold;
 }
 
-div {
+.total {
     width: 100%;
     align-items: center;
     justify-content: center;
+    border-bottom: 1px solid #dd9c234a;
     
 }
 .shortterminfo {
@@ -173,6 +174,7 @@ div {
 .title {
     justify-content: right;
     font-size: 4vmin;
+    padding-right: 10%;
     width: 50%;
     color: #22577E;
     text-align: right;
@@ -180,7 +182,6 @@ div {
 
 .detailvalue {
     justify-content: left;
-    padding-left: 40px;
     font-size: 5vmin;
     color:#E39E22;
 }
