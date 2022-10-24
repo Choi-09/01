@@ -1,10 +1,9 @@
 import weather from '../DB/weather.json';
 import './font.css'
-import { useState } from 'react';
 
-export default function WeatherDay(probs){
-    const d = probs.d;
-    let witem = weather.response.body.items.item[0]; //0부터 시작
+export default function WeatherDay(props){
+    const d = props.d;
+    let witem = weather.response.body.items.item[0]; //1개짜리 배열
 
     const items = []; //필요한 아이템 모으기
     const keys = [`rnSt${d}Am`, `rnSt${d}Pm`, `wf${d}Am`, `wf${d}Am`]; //weather.json에서 반복되는 정보 가져오기
