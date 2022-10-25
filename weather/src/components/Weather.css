@@ -2,65 +2,71 @@
     margin: 0px;
     padding: 0px;
 }
-
 #root {
+    display: inline-flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: flex;
-    flex-direction: column;
+    width: 100vw;
 }
-
 h1 {
     position: sticky;
     top: 0;
     width: 100vw;
-    height: 150px;
+    min-height: 150px;
     background-color:#22577E; 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     color:white;
-    font-size: 9vmin;
+    font-size: 7vmin;
     z-index: 1;
     font-family: '12롯데마트행복Bold';
 }
 
 .formDiv{
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    height: 100px;
-    min-height: 70px;
+    min-height: 110px;
     background-color: #F1F1E6;
+    width: 100%;
 }
 
 .btns {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
+    width: 100vw;
 }
-button {
+ button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 	z-index: 0;
 	border: 1px solid black;
-    font-size: 1.3em;
+    font-size: 3vmin;
     font-family: 'BinggraeMelona';
-    margin: 30px 20px;
+    margin:3% 5%;
     padding: 10px 30px;
     cursor: pointer;
+    min-width: 13vw;
+
 }
 
-button::before, 
-button::after {
+ button::before, 
+ button::after {
 	position: absolute;
 	z-index: -1;
 	display: block;
 	content: '';
 }
 
-button,
-button::before,
-button::after {
+ button,
+ button::before,
+ button::after {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
@@ -69,28 +75,28 @@ button::after {
     border-radius: 5px;
 }
 
-button:hover {
+ button:hover {
 	background-color: #22577E;
 	border-color: #22577E;
 	color: white;
 }
 
-button::before,
-button::after {
+ button::before,
+ button::after {
 	top: 0;
-	width: 50%;
+	width: 100%;
 	height: 100%;
 	background-color: #F2FAFF;
 }
 
-button::before {
+ button::before {
 	right: 0;
 }
 
-button::after {
+ button::after {
 	left: 0;
 }
-button:hover::before,
+ button:hover::before,
 button:hover::after {
 	width: 0;
 	background-color: #F2FAFF;
@@ -104,10 +110,10 @@ ul {
     margin: 7%;
 }
 
-li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
+.rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
     list-style: none;
     border: 1px solid black;
-    width: 50vw;
+    width: 20vw;
     margin-bottom: 3%;
     border: 1.5px solid #dd9c234a;
     border-radius: 5px;
@@ -118,6 +124,7 @@ li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
     font-family: 'BinggraeMelona';
     margin: 3%;
 }
@@ -133,7 +140,7 @@ li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
 
 .rnvalue {
     color: #E39E22;
-    font-size: 6vmin;
+    font-size: 3vmin;
     font-weight: bold;
 }
 
@@ -142,16 +149,18 @@ li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
 }
 .wvalue {
     color:#E39E22;
-    font-size: 6vmin;
+    font-size: 3vmin;
     font-weight: bold;
 }
 
 .total {
+    display: flex;
+    flex-direction: row;
     width: 100%;
     align-items: center;
     justify-content: center;
     border-bottom: 1px solid #dd9c234a;
-    
+    margin: 0px auto;
 }
 .shortterminfo {
     display: flex;
@@ -184,5 +193,83 @@ li > .rntotalam, .rntotalpm, .wtotalam, .wtotalpm {
     justify-content: left;
     font-size: 5vmin;
     color:#E39E22;
+
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.termDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+/* home으로 돌아가기 링크 */
+.home  {
+    position: fixed; 
+    right: 65%; 
+    top: 300px; 
+    margin-right: -720px;
+    text-align:center;
+    width: 120px;
+    text-decoration: none;
+    color: white;   
+    border: 1px solid gray; 
+    font-size: 1.2em;
+    box-shadow: inset;
+
+  }
+
+/* home 링크 애니메이션 */
+  .home::before, 
+  .home::after {
+     position: absolute;
+     z-index: -1;
+     display: block;
+     content: '';
+ }
+ 
+ .home,
+ .home::before,
+ .home::after {
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     -webkit-transition: all .3s;
+     transition: all .3s;
+     border-radius: 2px;
+ }
+ 
+ .home:hover {
+     background-color: white;
+     border-color: black;
+     color: black;
+ }
+ 
+ .home::before,
+ .home::after {
+     top: 0;
+     width: 100%;
+     height: 100%;
+     background-color: gray;
+ }
+ 
+ .home::before {
+     right: 0;
+ }
+ 
+ .home::after {
+     left: 0;
+ }
+ .home:hover::before,
+ .home:hover::after {
+     width: 0;
+     background-color: gray;
+ }
 

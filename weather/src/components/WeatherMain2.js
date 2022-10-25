@@ -1,6 +1,8 @@
 import weather2 from '../DB/weather2.json';
 import item from '../DB/item.json';
 import './Weather.css';
+import {Link} from "react-router-dom";
+
 
 export default function WeatherMain2() {
 
@@ -33,12 +35,16 @@ export default function WeatherMain2() {
     // }
     // console.log(items2);
 
+
+
     return(
         <>
         <h1>날 씨 예 보 - 단기정보</h1>
+        <Link to = '/' className = 'home'> Home </Link>
         <div className='shortterminfo'>
             {items2}
         </div>
+    
         </>
     );
 }

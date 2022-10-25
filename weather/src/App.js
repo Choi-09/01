@@ -1,12 +1,17 @@
-
+import {Route, Routes} from 'react-router-dom';
 import WeatherMain from './components/WeatherMain';
-// import './App.css';
-import WeatherMain2 from './components/WeatherMain2'
+import WeatherMain2 from './components/WeatherMain2';
+import Home from './components/Home';
 
 function App() {
   return (
     <>
-      <WeatherMain2 />
+      
+      <Routes>
+        <Route path = '/' element={<Home />} />
+        <Route path='/p1/:term' element={<WeatherMain2 />} />
+        <Route path='/p2/:term' element={<WeatherMain />} />
+      </Routes>
     </>
   );
 }
