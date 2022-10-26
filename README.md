@@ -27,7 +27,9 @@
   + 5. package.json 파일에 홈페이지 주소 설정 // 스크립트에 추가 "predeploy": "npm run build","deploy": "gh-pages -d build", "homepage": ＂깃허브주소
   + 6. gh-pages 배포하고 레포지토리에 다시 설정 // npm run deploy
   ```
-  Can't deploy React App with gh-pages. "Remote url mismatch."
+  ※깃 배포 오류※
+  1. "Remote url mismatch." 
+    + ▶ `(1) 모든 데이터가 up to date인지 확인하기` `(2) build 폴더 삭제` `(3)  the node_modules > .cache > gh-pages 폴더 삭제` `(4) 깃허브에 push` `(5) npm run deploy`
   ```
 + 특징
   + 사용자 정의태그를 만든다는것은: 아무렇게나 만드는게 아니라 리턴을 기존에 있는 HTML 태그를 묶음으로 만드는 것.
