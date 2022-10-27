@@ -26,7 +26,20 @@
   + 4. 로컬 컴퓨터 React 프로젝트에 gh-pages 설치 // npm install gh-pages --save-dev
   + 5. package.json 파일에 홈페이지 주소 설정 // 스크립트에 추가 "predeploy": "npm run build","deploy": "gh-pages -d build", "homepage": ＂깃허브주소
   + 6. gh-pages 배포하고 레포지토리에 다시 설정 // npm run deploy
+  ```
+  ※깃 배포 오류※
+  1. "Remote url mismatch." 
+    ▶ (1) 모든 데이터가 up to date인지 확인하기
+       (2) build 폴더 삭제
+       (3)  the node_modules > .cache > gh-pages 폴더 삭제
+       (4) 깃허브에 push
+       (5) npm run deploy`
   
+  2. 배포 사이트 빈화면
+    ▶ 오타 확인
+    ▶ git 시킨 레퍼지토리 경로 확인
+    ▶ index.js파일 < BrowserRouter basename = {process.env.PUBLIC_URL}>
+   ```
 + 특징
   + 사용자 정의태그를 만든다는것은: 아무렇게나 만드는게 아니라 리턴을 기존에 있는 HTML 태그를 묶음으로 만드는 것.
   + 컴포넌트는 무조건 대문자로 시작
