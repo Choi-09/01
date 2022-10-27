@@ -1,12 +1,11 @@
-import mv from '../jsonData/mvinfo.json'; //mvinfo에서 데이터 끌어오기
 import '../project/MyInfo.css';
 //useState hook이 브라우저에 재랜더링해서 출력
 import {useState, useEffect, useRef} from 'react';
 //Hook: useState, useEffect
 import MvClock from './MvClock'
 
-function MvInfo() {
-    const mvinfo = mv.movieInfoResult.movieInfo; //원하는 object 정보에 접근
+function MvInfo(props) {
+    const mvinfo = props.mvInfo.movieInfoResult.movieInfo; //원하는 object 정보에 접근
     // console.log(mvinfo);
     
     //화면에 출력할 정보를 오브젝트로 생성
