@@ -22,7 +22,7 @@
 + 리액트 배포(깃허브)
   + 1. 터미널을 띄워 새로 생성된 로컬 컴퓨터 디렉토리로 이동 // cd
   + 2. 깃허브에 새로운 레포지토리 생성
-  + 3. 원격지 레포지토리와 현재 프로젝트 연결하고 push // remot add origin, push
+  + 3. 원격지 레포지토리와 현재 프로젝트 연결하고 push // remote add origin, push
   + 4. 로컬 컴퓨터 React 프로젝트에 gh-pages 설치 // npm install gh-pages --save-dev
   + 5. package.json 파일에 홈페이지 주소 설정 // 스크립트에 추가 "predeploy": "npm run build","deploy": "gh-pages -d build", "homepage": ＂깃허브주소
   + 6. gh-pages 배포하고 레포지토리에 다시 설정 // npm run deploy
